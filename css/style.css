@@ -1,0 +1,96 @@
+body {
+    background-color: #151418;
+    background-image: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position-x: 80%;
+}
+.logo {
+    margin-top: 137px;
+    margin-bottom: 156px;
+}
+.mission-block {
+    background-color: rgba(34, 36, 43, 0.8);
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-right: 70px;
+    margin-bottom: 20px;
+}
+.mission-block-description__preheader {
+    color: #17A1CC;
+    letter-spacing: 7px;
+    font-size: 24px;
+    line-height: 100%;
+    font-family: 'Teko';
+    margin-bottom: 16px;
+}
+.mission-block-description__header {
+    font-size: 72px;
+    line-height: 100%;
+    font-family: 'Teko';
+    margin-bottom: 40px;
+    color: #fff;
+}
+.mission-block-description__text {
+    margin-bottom: 40px;
+}
+.mission-block-description__text p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+.mission-block-description__text p:last-child {
+    margin-bottom: 0;
+}
+.mission-block-description-info {
+    gap: 0 30px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Teko';
+}
+
+/* media */
+@media (max-width:768px) {
+    body {
+        background-size: contain;
+    }
+    .mission-block__image {
+        display: none !important;
+    }
+    .mission {
+        padding: 30px;
+    }
+    .mission-block {
+        padding: 20px ;
+    }
+    .mission-block-description-info {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .mission-block-description-info__data,
+    .mission-block-description-info__time,
+    .mission-block-description-info__ship {
+        width: 100%;
+
+    }
+    .logo {
+        margin-top: 70px;
+        margin-bottom: 40px;
+        align-items: start;
+        display: flex;
+        width: 100%;
+        padding: 0 30px;
+        max-width: 360px;
+    }
+    .logo img {
+        width: 100%;
+    }
+}
+@media (max-width:576px) {
+    body {
+        background-position-x: 53%;
+        background-size: initial;
+    }
+}
